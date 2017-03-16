@@ -26,18 +26,59 @@
 
   <div class="row"><!--game updates-->
 
-  		<div class="col-xs-12"></div>
+  		<div class="col-xs-12">
+            <form class="logInForm">
+              <div class="form-group form-inline">
+                  <label for="exampleInputEmail1">Type name to enter the game...  </label>
+                  <input type="text" class="form-control" id="userName" placeholder="Your name">
+                  <button type="submit" class="form-inline btn btn-lg btn-success" id="player-enter">Play</button>
+              </div>
+            </form>
+      </div>
 
   </div><!--/game updates--> 
 
 
   <div class="row"><!--game board-->
-
-  		<div class="col-xs-4">Player 1</div>
-  		<div class="col-xs-4">Game board</div>
-  		<div class="col-xs-4">Player 2</div>
-
-  </div><!--/game board-->
+      <div class="col-xs-12">
+        <div class="row text-center">
+          <!-- player 1 panel -->
+          <div class="col-xs-4">
+            <div class="p1Border">
+              <div class="p1Panel">                   
+                <!-- RPS methods div -->
+                <img class="methods" src="assets/images/rock.png" data-method="rock">
+                <img class="methods" src="assets/images/paper.png" data-method="paper">
+                <img class="methods" src="assets/images/scissors.png" data-method="scissors">
+              </div>
+            </div>
+            <div id="p1ScoreBoard">
+              <span class="wins"></span>
+            </div>
+          </div>
+          <!--vs message panel -->
+          <div class="col-xs-4">
+            <div class="messages">
+              <div id="message"></div>
+            </div>
+          </div>
+          <!-- Right side player panel -->
+          <div class="col-xs-4">
+            <div class="p2Border">
+              <div class="p2Panel">
+                <!-- RPS methods div -->
+                <img class="methods" src="assets/images/rock.png" data-method="rock">
+                <img class="methods" src="assets/images/paper.png" data-method="paper">
+                <img class="methods" src="assets/images/scissors.png" data-method="scissors">
+              </div>
+            </div>
+            <div id="p1ScoreBoard">
+              <span class="wins"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/game board-->
 
   <div class="row"><!--chat-->
 
